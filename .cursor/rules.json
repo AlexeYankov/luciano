@@ -1,0 +1,154 @@
+{
+  "version": "1.0",
+  "rules": {
+    "naming": {
+      "pascalCase": [
+        "components",
+        "typeDefinitions",
+        "interfaces"
+      ],
+      "kebabCase": [
+        "directoryNames",
+        "fileNames"
+      ],
+      "camelCase": [
+        "variables",
+        "functions",
+        "methods",
+        "hooks",
+        "properties",
+        "props"
+      ],
+      "uppercase": [
+        "environmentVariables",
+        "constants",
+        "globalConfigurations"
+      ]
+    },
+    "typescript": {
+      "strictMode": true,
+      "preferences": {
+        "useInterface": true,
+        "avoidAny": true,
+        "preferUnknown": true,
+        "avoidTypeAssertions": true,
+        "useTypeGuards": true,
+        "avoidEnums": true
+      },
+      "utilityTypes": [
+        "Partial<T>",
+        "Pick<T, K>",
+        "Omit<T, K>",
+        "Record<K, T>",
+        "ReturnType<T>"
+      ]
+    },
+    "react": {
+      "componentStructure": {
+        "order": [
+          "imports",
+          "componentDeclaration",
+          "styledComponents",
+          "typescriptTypes"
+        ],
+        "preferences": {
+          "useFunctionalComponents": true,
+          "useArrowFunctions": true,
+          "useEarlyReturns": true,
+          "useConstForFunctions": true
+        }
+      },
+      "hooks": {
+        "naming": "use[Name]",
+        "preferences": {
+          "useCustomHooks": true,
+          "separateLogic": true
+        }
+      },
+      "eventHandlers": {
+        "naming": "handle[Event]",
+        "examples": [
+          "handleClick",
+          "handleSubmit",
+          "handleKeyDown"
+        ]
+      }
+    },
+    "nextjs": {
+      "appRouter": {
+        "preferences": {
+          "useServerComponents": true,
+          "minimizeClientComponents": true
+        },
+        "dataFetching": {
+          "serverComponents": "directAsyncFetch",
+          "clientComponents": "tanstackQueryWithSuspense"
+        }
+      },
+      "fileStructure": {
+        "components": {
+          "ui": "shadcn/tailwind primitives",
+          "features": "feature-specific components",
+          "layouts": "app-wide layouts"
+        },
+        "hooks": "custom hooks",
+        "lib": "utils and API clients",
+        "types": "global types"
+      }
+    },
+    "styling": {
+      "tailwind": {
+        "preferences": {
+          "avoidApply": true,
+          "useClassVariants": true,
+          "useDesignTokens": true
+        }
+      },
+      "shadcn": {
+        "preferences": {
+          "useCVA": true,
+          "maintainAccessibility": true
+        }
+      }
+    },
+    "accessibility": {
+      "requirements": [
+        "tabindex",
+        "aria-labels",
+        "keyboardNavigation",
+        "semanticHTML"
+      ]
+    },
+    "errorHandling": {
+      "preferences": {
+        "useErrorBoundaries": true,
+        "useZodValidation": true,
+        "useReactHookForm": true
+      }
+    },
+    "performance": {
+      "optimizations": [
+        "dynamicImports",
+        "imageOptimization",
+        "codeSplitting"
+      ],
+      "monitoring": [
+        "webVitals",
+        "lighthouseCI"
+      ]
+    },
+    "security": {
+      "requirements": [
+        "securityHeaders",
+        "dependencyAudits",
+        "inputValidation"
+      ]
+    },
+    "internationalization": {
+      "preferences": {
+        "useI18next": true,
+        "supportLocalization": true
+      }
+    }
+  }
+} 
