@@ -1,14 +1,11 @@
-export default function Home() {
+import Header from '@/components/Header'
+import Home from '@/components/Home'
+
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
-        <h1 className="text-4xl font-bold text-center mb-8">
-          Welcome to Luciano
-        </h1>
-        <p className="text-center text-lg">
-          Get started by editing <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-      </div>
-    </main>
+    <>
+      <Header />
+      <Home />
+    </>
   )
 } 
