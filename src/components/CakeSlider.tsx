@@ -72,7 +72,7 @@ export default function CakeSlider() {
   const visibleCards = cakeCards.slice(currentSlide, currentSlide + 3)
 
   return (
-    <section className="w-full h-[700px] relative overflow-hidden">
+    <section id="menu" className="w-full h-[700px] relative overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 transition-all duration-1000 ease-in-out"

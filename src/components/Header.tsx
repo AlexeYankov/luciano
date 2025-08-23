@@ -20,7 +20,7 @@ export default function Header() {
 
   const navItems = [
     { href: '/', label: 'На верх' },
-    { href: '/menu', label: 'К тортикам!' },
+    { href: '#menu', label: 'К тортикам!' },
     { href: '/about', label: 'О нас' },
     { href: '/basket', label: 'Корзина' },
     { href: '/orders', label: 'Заказы' }
@@ -29,12 +29,31 @@ export default function Header() {
   // Определяем активную ссылку: если скролл > 0, то активна "К тортикам!", иначе по pathname
   const getActiveHref = () => {
     if (isScrolled) {
-      return '/menu'
+      return '#menu'
     }
     return pathname
   }
 
   const activeHref = getActiveHref()
+
+  const handleNavClick = (href: string, e: React.MouseEvent) => {
+    if (href.startsWith('#')) {
+      e.preventDefault()
+      const element = document.querySelector(href)
+      if (element) {
+        element.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
+    } else if (href === '/') {
+      e.preventDefault()
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
+  }
 
   return (
     <header className="bg-none backdrop-blur-md border-b border-white/30 shadow-lg fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out">
@@ -52,6 +71,7 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
+                  onClick={(e) => handleNavClick(item.href, e)}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-500 ease-in-out ${
                     activeHref === item.href
                       ? 'text-white bg-white/20 shadow-lg backdrop-blur-sm scale-105'
