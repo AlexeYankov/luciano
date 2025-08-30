@@ -26,11 +26,8 @@ export default function Home() {
            Ваши любимые вкусы в одном месте
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-200 shadow-lg">
-              Shop Now
-            </button>
-            <button className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-200">
-              Learn More
+            <button className="bg-white w-[300px] h-[50px] hover:bg-gray-100 text-gray-900 px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-200">
+              К тортикам!
             </button>
             </div>
         </div>

@@ -95,8 +95,8 @@ export default function CakeSlider() {
       
       {/* Контент слайдера */}
       <div className="relative z-20 h-full flex flex-col justify-center items-center px-4">
-        <h2 className="text-4xl font-bold text-white mb-8 text-center drop-shadow-lg animate-fade-in">
-          Наши работы
+        <h2 className="text-4xl font-medium text-white mb-12 text-center drop-shadow-lg animate-fade-in">
+          Акция дня
         </h2>
         
         {/* Слайдер с 3 карточками */}
