@@ -1,4 +1,7 @@
 {
+<<<<<<< HEAD
   "/not-found": "app/not-found.js",
+=======
+>>>>>>> origin/main
   "/page": "app/page.js"
 }

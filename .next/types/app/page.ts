@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // File: /home/yanko/code/luciano/src/app/page.tsx
+=======
+// File: /workspaces/luciano/src/app/page.tsx
+>>>>>>> origin/main
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
