@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([["app/page"],{
+self["webpackHotUpdate_N_E"]("app/page",{
 
 /***/ "(app-pages-browser)/./node_modules/.pnpm/next@14.1.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2Fworkspaces%2Fluciano%2Fnode_modules%2F.pnpm%2Fnext%4014.1.0_react-dom%4018.3.1_react%4018.3.1__react%4018.3.1%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fimage-component.js&modules=%2Fworkspaces%2Fluciano%2Fsrc%2Fcomponents%2FCakeSlider.tsx&modules=%2Fworkspaces%2Fluciano%2Fsrc%2Fcomponents%2FHeader.tsx&modules=%2Fworkspaces%2Fluciano%2Fsrc%2Fcomponents%2FLazyCards.tsx&server=false!":
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -502,11 +502,4 @@ module.exports = JSON.parse('{"kids":{"zajchik":{"weight":"1.15","description":"
 
 /***/ })
 
-},
-/******/ function(__webpack_require__) { // webpackRuntimeModules
-/******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, ["main-app"], function() { return __webpack_exec__("(app-pages-browser)/./node_modules/.pnpm/next@14.1.0_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2Fworkspaces%2Fluciano%2Fnode_modules%2F.pnpm%2Fnext%4014.1.0_react-dom%4018.3.1_react%4018.3.1__react%4018.3.1%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fimage-component.js&modules=%2Fworkspaces%2Fluciano%2Fsrc%2Fcomponents%2FCakeSlider.tsx&modules=%2Fworkspaces%2Fluciano%2Fsrc%2Fcomponents%2FHeader.tsx&modules=%2Fworkspaces%2Fluciano%2Fsrc%2Fcomponents%2FLazyCards.tsx&server=false!"); });
-/******/ var __webpack_exports__ = __webpack_require__.O();
-/******/ _N_E = __webpack_exports__;
-/******/ }
-]);
+});
